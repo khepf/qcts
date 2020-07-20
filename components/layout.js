@@ -1,3 +1,5 @@
+import React from 'react'
+import Navbar from './Navbar'
 import Head from 'next/head'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
@@ -8,6 +10,10 @@ const name = 'Queen City Technical Services'
 export const siteTitle = 'QCTS'
 
 export default function Layout({ children, home }) {
+  const [isOpen, setIsOpen] = React.useState(false)
+  const toggle = () => {
+    setIsOpen(!isOpen)
+  }
   return (
     <div className={styles.container}>
       <Head>
@@ -25,6 +31,7 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
+      <Navbar toggle={toggle}></Navbar>
       <header className={styles.header}>
         {home ? (
           <>
