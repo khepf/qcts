@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import Footer from './footer'
 
 const name = 'Queen City Technical Services'
 export const siteTitle = 'QCTS'
@@ -13,7 +14,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="A complete online resource for all technical needs."
         />
         <meta
           property="og:image"
@@ -61,6 +62,7 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
+      <Footer />
     </div>
   )
 }
