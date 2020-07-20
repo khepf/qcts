@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './navbar'
+import Sidebar from './sidebar'
 import Head from 'next/head'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
@@ -32,6 +33,7 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Navbar toggle={toggle}></Navbar>
+      <Sidebar isOpen={isOpen} toggle={toggle}/>
       <header className={styles.header}>
         {home ? (
           <>

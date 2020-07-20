@@ -2,7 +2,7 @@ import React from "react"
 import Link from 'next/link'
 import styles from './navbar.module.css'
 
-const NavLinks = ({ styleClass }) => {
+const NavLinks = () => {
   return (
     <ul className={styles.navlinks}>
       <li>
