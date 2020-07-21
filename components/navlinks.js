@@ -6,8 +6,18 @@ const NavLinks = () => {
   return (
     <ul className={styles.navlinks}>
       <li>
-        <Link href="/" >
-          <a className={styles.pagelink}>Home</a>
+        <Link href="/web-design" >
+          <a className={styles.pagelink}>Web Design</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/data-analytics" >
+          <a className={styles.pagelink}>Data Analytics</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/seo" >
+          <a className={styles.pagelink}>SEO</a>
         </Link>
       </li>
       <li>
@@ -15,6 +25,7 @@ const NavLinks = () => {
           <a className={styles.pagelink}>Links</a>
         </Link>
       </li>
+      
     </ul>
   )
 }

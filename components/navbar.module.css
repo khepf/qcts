@@ -21,6 +21,13 @@ Navbar
   align-items: center;
   
 }
+.navlogo {
+    display: block;
+    height: 40px;
+}
+.navlogo img {
+    height: 100%;
+}
 .togglebtn {
   font-size: 2rem;
   background: transparent;

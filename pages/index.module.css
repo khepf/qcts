@@ -1,0 +1,21 @@
+.herosection {
+    border: 2px solid green;
+    display: flex;
+}
+
+.herodiv1 {
+    margin: 10px;
+    padding: 10px;
+}
+
+.herodiv2 {
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+@media screen and (max-width: 800px) {
+    .herosection {
+        flex-wrap: wrap;
+    }
+}

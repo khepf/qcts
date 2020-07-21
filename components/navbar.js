@@ -9,13 +9,16 @@ const Navbar = ({ toggle }) => {
       <div className={styles.navcenter}>
         <div className={styles.navheader}>
           <Link href="/" >
-            <a className={styles.navlogo}>qcts</a>
+            <a className={styles.navlogo}><img src="/images/qcts.png"/></a>
           </Link>
           <button className={styles.togglebtn} onClick={toggle}>
             <FaBars />
           </button>
         </div>
         <NavLinks styleClass={styles.navlinks} />
+        <Link href="/" >
+            <a className={styles.navlogo}><img src="/images/phonenumber.png"/></a>
+          </Link>
       </div>
     </nav>
   }

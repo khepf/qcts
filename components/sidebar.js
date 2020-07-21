@@ -17,6 +17,21 @@ const Sidebar = ({isOpen, toggle}) => {
         </Link>
       </li>
       <li>
+        <Link href="/web-design" >
+          <a className={styles.pagelink}>Web Design</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/data-analytics" >
+          <a className={styles.pagelink}>Data Analytics</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/seo" >
+          <a className={styles.pagelink}>SEO</a>
+        </Link>
+      </li>
+      <li>
         <Link href="/links" >
           <a className={styles.pagelink}>Links</a>
         </Link>

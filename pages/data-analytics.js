@@ -1,15 +1,14 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 
-export default function LinksPage() {
+export default function DataAnalyticsPage() {
     return (
     <Layout>
         <Head>
         <title>{siteTitle}</title>
       </Head>
       <section>
-          <h3>Useful Links</h3>
-          <a href="https://usbrandcolors.com/youtube-colors/">U.S. Brand Colors</a>
+          <h3>Data Analytics</h3>
       </section>
     </Layout>
     )
