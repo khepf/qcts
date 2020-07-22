@@ -9,7 +9,7 @@ const Navbar = ({ toggle }) => {
       <div className={styles.navcenter}>
         <div className={styles.navheader}>
           <Link href="/" >
-            <a className={styles.navlogo}><img src="/images/qcts.png"/></a>
+            <a className={styles.navlogo}><img src="/images/qcts.png" alt="qcts logo"/></a>
           </Link>
           <button className={styles.togglebtn} onClick={toggle}>
             <FaBars />
@@ -17,7 +17,7 @@ const Navbar = ({ toggle }) => {
         </div>
         <NavLinks styleClass={styles.navlinks} />
         <Link href="/" >
-            <a className={styles.navlogo}><img src="/images/phonenumber.png"/></a>
+            <a className={styles.navlogo}><img src="/images/phonenumber.png" alt="513-494-6777"/></a>
           </Link>
       </div>
     </nav>

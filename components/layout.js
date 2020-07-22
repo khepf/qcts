@@ -19,10 +19,6 @@ export default function Layout({ children, home }) {
         <Head>
           <link rel="icon" href="/favicon.ico" />
           <meta
-            name="description"
-            content="A complete online resource for your technical needs."
-          />
-          <meta
             property="og:image"
             content={`https://og-image.now.sh/${encodeURI(
               siteTitle

@@ -19,6 +19,7 @@ export default function Home({ allPostsData }) {
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
+        <meta name="description" content="Your one-stop resource for Web Design, SEO, Data Analytics and Audio/Video." />
       </Head>
       <section className={styles.herosection}>
         <div className={styles.herodiv1}><p>

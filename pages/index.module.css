@@ -1,16 +1,19 @@
 .herosection {
-    border: 2px solid green;
     display: flex;
+    background: hsl(210, 31%, 80%);
+
 }
 
 .herodiv1 {
     margin: 10px;
     padding: 10px;
+    background: white;
 }
 
 .herodiv2 {
     margin: 10px;
     padding: 10px;
+    background: white;
     
 }
 
