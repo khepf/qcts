@@ -1,0 +1,25 @@
+.hero {
+    display: flex;
+    background: hsl(245, 87%, 94%);
+    height: 12rem;
+    position: relative;
+    z-index: -1;
+    margin-bottom: 6rem;
+    overflow: hidden;
+  }
+
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
+.qctsimg {
+    width: 15rem;
+    height: 10rem;
+    /* display: block;
+    position: absolute;
+    bottom: 0; */
+    left: 40%;
+    transform: translate(10%, 10%);
+    z-index: 4;
+  }

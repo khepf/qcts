@@ -1,0 +1,14 @@
+.footer {
+    height: 7rem;
+    text-align: center;
+    background: hsl(209, 61%, 16%);
+    display: grid;
+    place-items: center;
+  }
+
+  .footer p {
+    margin-bottom: 0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }

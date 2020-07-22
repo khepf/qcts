@@ -1,7 +1,8 @@
 import React from 'react'
+import styles from './footer.module.css'
 
 const Footer = () => {
-  return <footer className="footer">
+  return <footer className={styles.footer}>
     <div>
       <p>
         &copy;{new Date().getFullYear()} Queen City Technical Services

@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import { getSortedPostsData } from '../lib/posts'
+import Hero from '../components/hero'
 import Link from 'next/link'
 import Date from '../components/date'
 import styles from './index.module.css'
@@ -21,20 +22,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
         <meta name="description" content="Your one-stop resource for Web Design, SEO, Data Analytics and Audio/Video." />
       </Head>
-      <section className={styles.herosection}>
-        <div className={styles.herodiv1}><p>
-        It is a long established fact that a reader will be distracted by
-         the readable content of a page when looking at its layout.
-          The point of using Lorem Ipsum is that it has a more-or-less
-           normal distribution of letters
-          </p></div>
-        <div className={styles.herodiv2}><p>
-        It is a long established fact that a reader will be distracted by
-         the readable content of a page when looking at its layout.
-          The point of using Lorem Ipsum is that it has a more-or-less
-           normal distribution of letters
-          </p></div>
-      </section>
+      <Hero />
       <section>
         <h2>Latest Posts</h2>
         <ul>

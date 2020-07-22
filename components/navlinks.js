@@ -6,6 +6,11 @@ const NavLinks = () => {
   return (
     <ul className={styles.navlinks}>
       <li>
+        <Link href="/" >
+          <a className={styles.pagelink}>Home</a>
+        </Link>
+      </li>
+      <li>
         <Link href="/web-design" >
           <a className={styles.pagelink}>Web Design</a>
         </Link>
@@ -23,6 +28,11 @@ const NavLinks = () => {
       <li>
         <Link href="/links" >
           <a className={styles.pagelink}>Links</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/links" >
+          <a className={styles.pagelink}>Contact</a>
         </Link>
       </li>
       

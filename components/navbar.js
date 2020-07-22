@@ -8,9 +8,6 @@ const Navbar = ({ toggle }) => {
     return <nav className={styles.navbar}>
       <div className={styles.navcenter}>
         <div className={styles.navheader}>
-          <Link href="/" >
-            <a className={styles.navlogo}><img src="/images/qcts.png" alt="qcts logo"/></a>
-          </Link>
           <button className={styles.togglebtn} onClick={toggle}>
             <FaBars />
           </button>
