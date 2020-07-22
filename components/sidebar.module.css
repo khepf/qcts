@@ -19,7 +19,6 @@ Sidebar
     z-index: 999;
     transform: translateX(-100%);
     visibility: hidden;
-    border: 2px solid green;
   }
   .showSidebar {
     transform: translateX(0);
@@ -48,12 +47,6 @@ Sidebar
     cursor: pointer;
   }
 
-  @media screen and (min-width: 800px) {
-    .sidebar {
-      transform: translateX(-100%);
-    }
-  }
-
   .closebtn {
     position: absolute;
     top: 1rem;
@@ -63,3 +56,10 @@ Sidebar
     font-size: 3rem;
     cursor: pointer;
   }
+
+  @media screen and (min-width: 800px) {
+    .sidebar {
+      transform: translateX(-100%);
+    }
+  }
+

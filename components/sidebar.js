@@ -6,7 +6,7 @@ import styles from './sidebar.module.css'
 
 const Sidebar = ({isOpen, toggle}) => {
   return <aside className={`${styles.sidebar} ${isOpen ? styles.showSidebar : ''}`}>
-    <button className='closebtn' onClick={toggle}>
+    <button className={styles.closebtn} onClick={toggle}>
       <IoMdClose />
     </button>
     <div className={styles.sidebarcontainer}>
