@@ -1,5 +1,5 @@
 export const hedgehogScene = {
-  icon: { src: "./icons/hedgehog.svg", alt: "Hedgehog icon" },
+  icon: { src: "./icons/hedgehog_white.svg", alt: "Hedgehog icon" },
   text: "Web Design",
   image1: { src: "./images/hedgehog/hedgehog1-min.png", alt: "Picture of hedgehog" },
   image2: { src: "./images/hedgehog/hedgehog2-min.png", alt: "Picture of hedgehog" },
@@ -7,7 +7,7 @@ export const hedgehogScene = {
 };
 
 export const raccoonScene = {
-  icon: { src: "./icons/raccoon.svg", alt: "raccoon icon" },
+  icon: { src: "./icons/raccoon_white.svg", alt: "raccoon icon" },
   text: "Data Analytics",
   image1: { src: "./images/raccoon/raccoon1-min.png", alt: "Picture of raccoon" },
   image2: { src: "./images/raccoon/raccoon2-min.png", alt: "Picture of raccoon" },
@@ -15,7 +15,7 @@ export const raccoonScene = {
 };
 
 export const squirrelScene = {
-  icon: { src: "./icons/squirrel.svg", alt: "squirrel icon" },
+  icon: { src: "./icons/squirrel_white.svg", alt: "squirrel icon" },
   text: "SEO",
   image1: { src: "./images/squirrel/squirrel1-min.png", alt: "Picture of squirrel" },
   image2: { src: "./images/squirrel/squirrel2-min.png", alt: "Picture of squirrel" },
