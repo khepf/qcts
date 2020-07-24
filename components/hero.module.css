@@ -1,25 +1,126 @@
+/*******************************
+  Hero background
+********************************/
 .hero {
-    display: flex;
-    background: hsl(245, 87%, 94%);
-    height: 12rem;
     position: relative;
-    z-index: -1;
-    margin-bottom: 6rem;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    height: 80vh;
+    min-height: 35rem;
+    background-color: rgb(255, 253, 247);
+  
     overflow: hidden;
   }
-
-.img {
-    max-width: 100%;
-    height: auto;
-}
-
-.qctsimg {
-    width: 15rem;
-    height: 10rem;
-    /* display: block;
+  
+  /*******************************
+    Central icon and text
+  ********************************/
+  .icon_holder {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: rgba(255, 253, 247, 0.5);
+    box-shadow: 0 0 10px 10px rgba(255, 253, 247, 0.5);
+    border-radius: 3rem;
+    padding: 2rem;
+    height: 24rem;
+  }
+  
+  .icon_holder_icon {
     position: absolute;
-    bottom: 0; */
-    left: 40%;
-    transform: translate(10%, 10%);
-    z-index: 4;
+    top: 0;
+    width: 16rem;
+  }
+  
+  .icon_holder_icon img {
+    max-width: 100%;
+  }
+  
+  .icon_holder_text {
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    bottom: 0;
+    
+  }
+  
+  /*******************************
+    Animal images
+  ********************************/
+  .animal_image {
+    position: absolute;
+  }
+  
+  .animal_image img {
+    max-width: 100%;
+  }
+  
+  .animal_image_one {
+    left: -7rem;
+    width: 40vw;
+    max-width: 550px;
+  }
+  
+  .animal_image_two {
+    top: 0;
+    right: 0;
+    width: 40vw;
+    max-width: 390px;
+  }
+  
+  .animal_image_three {
+    bottom: 0;
+    right: 0;
+    width: 40vw;
+    max-width: 290px;
+  }
+  
+  /*******************************
+    Responsive changes
+  ********************************/
+  @media screen and (max-width: 876px) {
+    .hero {
+      height: 70vh;
+    }
+  
+    /*******************************
+      Icon and text cover
+    ********************************/
+    .icon_holder {
+      width: 100%;
+      height: 80%;
+      justify-content: flex-end;
+    }
+  
+    .icon_holder_icon {
+      top: 0;
+      bottom: 7rem;
+      max-width: 10rem;
+    }
+  
+    /*******************************
+      Reposition images
+    ********************************/
+    .animal_image_one {
+      top: -5rem;
+      width: 80vw;
+    }
+  
+    .animal_image_two {
+      right: 0rem;
+    }
+  
+    .animal_image_three {
+      top: 18rem;
+      bottom: auto;
+      right: -5rem;
+      width: 50vw;
+    }
   }

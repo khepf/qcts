@@ -1,14 +1,42 @@
-import React from "react"
-import styles from './hero.module.css'
+import React, { useEffect } from "react";
+import { useCycle } from "framer-motion";
 
-const Hero = () => {
-    return <header className={styles.hero}>
-        <img 
-        src="/images/qcts-square.png" 
-        alt="qcts hero image" 
-        className={styles.qctsimg} 
-        ></img>
-    </header>
+import ImageHolder from "./ImageHolder";
+import IconHolder from "./IconHolder";
+
+import { hedgehogScene, raccoonScene, squirrelScene } from "./scenes";
+import styles from './hero.module.css';
+const SLIDE_CHANGE_TIME_MS = 5000;
+
+function Hero() {
+  const [currentScene, setCurrentScene] = useCycle(
+    hedgehogScene,
+    raccoonScene,
+    squirrelScene
+  );
+
+  useEffect(() => {
+    const timeOut = setTimeout(setCurrentScene, SLIDE_CHANGE_TIME_MS);
+    return () => clearTimeout(timeOut);
+  }, [currentScene, setCurrentScene]);
+
+  return (
+    <div className={styles.hero}>
+      <IconHolder icon={currentScene.icon} text={currentScene.text} />
+      {/* <ImageHolder
+        img={currentScene.image1}
+        className={styles.animal_image, styles.animal_image_one}
+      /> */}
+      {/* <ImageHolder
+        img={currentScene.image2}
+        className={styles.animal_image, styles.animal_image_two}
+      />
+      <ImageHolder
+        img={currentScene.image3}
+        className={styles.animal_image, styles.animal_image_three}
+      /> */}
+    </div>
+  );
 }
 
-export default Hero
+export default Hero;
